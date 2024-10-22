@@ -1,0 +1,54 @@
+<!-- 4. Create Zebra Striping a Table and make an image rounded with CSS3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra Striping and Rounded Image</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Zebra striping */
+        }
+        img.rounded {
+            border-radius: 50%; /* Rounded image */
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Zebra-Striped Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Mike</td>
+            <td>32</td>
+        </tr>
+    </table>
+
+    <h2>Rounded Image</h2>
+    <img src="https://media.istockphoto.com/vectors/businessman-profile-icon-male-portrait-flat-vector-id530838817?k=20&m=530838817&s=170667a&w=0&h=uv1NsUb1a5aC3C8FK14TSxLvEyA77rZJVwdlQh66JQU=" alt="Profile Picture" class="rounded">
+
+</body>
+</html>

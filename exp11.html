@@ -1,0 +1,21 @@
+<!-- 11. JavaScript to set paragraph background color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Background Color</title>
+</head>
+<body>
+
+    <p id="para" style="font-size: 30px;">This is a paragraph. Click the button to change its background color.</p>
+    <button onclick="changeBackgroundColor()" style="font-size: 25px;">Change Background Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+            document.getElementById("para").style.backgroundColor = "yellow";
+        }
+    </script>
+
+</body>
+</html>

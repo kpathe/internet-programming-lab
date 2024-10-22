@@ -1,0 +1,38 @@
+<!-- 12. JavaScript Function to Add Rows to a Table -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Row to Table</title>
+</head>
+<body>
+
+    <table id="myTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="addRow()">Add Row</button>
+
+    <script>
+        function addRow() {
+            let table = document.getElementById("myTable");
+            let newRow = table.insertRow(-1); // Adds a new row at the end of the table
+
+            let nameCell = newRow.insertCell(0);
+            let ageCell = newRow.insertCell(1);
+
+            nameCell.textContent = "New Name";
+            ageCell.textContent = "30";
+        }
+    </script>
+
+</body>
+</html>

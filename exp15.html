@@ -1,0 +1,25 @@
+<!-- 15. JavaScript Program to Get Window Width and Height on Resize -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Size</title>
+</head>
+<body>
+
+    <p id="size" style="font-size: 32px;">Resize the window to see the dimensions change.</p>
+
+    <script>
+        function updateWindowSize() {
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            document.getElementById("size").textContent = `Width: ${width}, Height: ${height}`;
+        }
+
+        window.onresize = updateWindowSize;
+        window.onload = updateWindowSize;  // Show size on page load
+    </script>
+
+</body>
+</html>

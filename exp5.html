@@ -1,0 +1,58 @@
+<!-- 5. Create speech bubble shape and Image cross effect with CSS3 transition -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Bubble & Cross Effect</title>
+    <style>
+        /* Speech Bubble */
+        .speech-bubble {
+            position: relative;
+            background: #00aabb;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: #00aabb;
+            border-bottom: 0;
+            margin-left: -10px;
+            margin-bottom: -10px;
+        }
+
+        /* Image Cross Effect */
+        .cross-effect {
+            position: relative;
+            display: inline-block;
+        }
+        .cross-effect img {
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .cross-effect:hover img {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="speech-bubble">
+        <p>This is a speech bubble.</p>
+    </div>
+
+    <div class="cross-effect">
+        <img src="https://png.pngtree.com/png-vector/20240306/ourmid/pngtree-ball-logo-png-image_11898001.png" alt="Cross Effect Image">
+    </div>
+
+</body>
+</html>

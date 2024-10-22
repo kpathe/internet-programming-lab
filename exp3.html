@@ -1,0 +1,26 @@
+<!-- 3. Design a web page to isolate a part of the text that might be formatted in a different direction: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Direction Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        p {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Direction Isolation</h1>
+    
+    <p>This is a normal English sentence.</p>
+    
+    <p>The following part of this sentence is reversed: <bdo dir="rtl">!dlrow ,olleH</bdo></p>
+    
+    <p>Here is a sentence in Hebrew (right-to-left): <bdo dir="rtl">שלום עולם</bdo></p>
+</body>
+</html>
